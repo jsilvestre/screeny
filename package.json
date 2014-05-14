@@ -1,0 +1,39 @@
+{
+  "name": "screeny",
+  "version": "1.0.0",
+  "engines": [
+    "node = 0.8.x"
+  ],
+  "description": "A template project for cozy applications",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsilvestre/screeny.git"
+  },
+  "main": "server.coffee",
+  "dependencies": {
+    "americano": "0.3.5",
+    "americano-cozy": "0.2.3",
+    "moment": "2.6.0"
+  },
+  "devDependencies": {
+    "should": "2.0.1",
+    "mocha": "1.13.0",
+    "request-json": "0.4.4",
+    "cozy-fixtures": "1.0.1",
+    "coffeelint": "0.6.1"
+  },
+  "scripts": {
+    "test": "cake tests",
+    "start": "coffee server.coffee"
+  },
+  "cozy-permissions": {
+      "File": {
+      "description": "Store files in your cozy"
+    },
+    "Folder": {
+      "description": "Store folders in your cozy"
+    }
+  },
+  "cozy-displayName": "Screeny"
+}
